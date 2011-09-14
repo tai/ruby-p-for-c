@@ -19,7 +19,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdarg.h>
 
 // Counts number of actual arguments.
 #define COUNT_(_1, _2, _3, _4, _5, _6, _7, _8, N, ...) N
