@@ -13,7 +13,7 @@
  *
  * FIXME:
  * - Would be better if this doesn't depend on external debugger to run.
- * - Needs improvement on a way prevent variable from being optimized away.
+ * - Needs improvement on a way to prevent variable from being optimized away.
  */
 
 #include <stdio.h>
@@ -55,7 +55,7 @@
 // Dumps content of given symbol (uses external GDB for now)
 //
 // NOTE:
-// - Should use libbfd instead of gdb? (but this adds complexity...)
+// - Should use libbfd instead of gdb? (but that'll add complexity...)
 #define PP_D(...) do {                                \
         char *arg[] = { __VA_ARGS__, NULL };          \
         char **argp = arg;                            \
