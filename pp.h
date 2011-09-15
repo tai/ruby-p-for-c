@@ -87,6 +87,6 @@
 #define PP_8(a,b,c,d,e,f,g,h) do { PP_D(#a,#b,#c,#d,#e,#f,#g,#h); } while (0)
 
 // Comment this out if you think this is too aggressive.
-#define p PP
+#define p(...) PP(__VA_ARGS__)
 
 #endif
